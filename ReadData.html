@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>ReadData</title>
+</head>
+<body bgcolor="ccffff">
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><u><span style='font-size:12.0pt;line-height:107%'>Read Data - use help to get information</span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>For example, <span style='color:#00B050'>to get information how to read csv data</span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:white'><span style='font-size:12.0pt;line-height:107%'>?<a href="help_csv.html">read.csv</a> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:white'><span style='font-size:12.0pt;line-height:107%'>mycsv&lt;-read.csv(“test.csv”)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:white'><span style='font-size:12.0pt;line-height:107%'>mytxt
+&lt;-read.table(“test.txt “, sep=”\t”, header=TRUE)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:white'><span style='font-size:12.0pt;line-height:107%'>head(mytxt)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:white'><span style='font-size:12.0pt;line-height:107%'>mydata
+&lt;-read.table(“test.txt “, sep=”\t”, row.names=1, ,header=TRUE,)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>str(mydate)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>mydata
+&lt;-read.delim“test.txt “, sep=”\t”, row.names=1, ,header=TRUE,)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>mdata
+&lt;-read.csv(“test.txt “,  row.names=1, stringAsFactors=FALSE,header=TRUE)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>mydata
+&lt;-read.XLS(“test.txt “, row.names=1,
+sheet=1,now.names=1,stringAsFactors=FALSE,header=TRUE)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>myBook
+&lt;-loadWorkbook(“ex.xlsx”)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>mydata &lt;-readWorksheet(myBook,sheet=1,rownames=1)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>head(mydate)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>str(mydata)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>to load SPSS files into
+R as data frames:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>library(“foreign”)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>mydata &lt;-
+read.spss(“mySpss.spss”, to.data.frame=TRUE)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>to load json files</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>library(“rjson”)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>mydata_list&lt;-fromJSON(FILE=”myfile.json”)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>mydata
+&lt;-as.data.frame(mydata_list)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>save(x,y,
+file=”exampleData.Rdata”)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>load(“exampleData.Rdata”)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>saveRDS – load 1 obj at
+a timesaveRDS(x,”x.rds”)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>saveRDS(y,”y.rds”)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>x2 &lt;-readRDS(“x.rds”)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>write.table(mydata,
+file=”savedata.txt”, quote=FALSE, sep=”\t”, row.names=TRUE, col.names=TRUE,
+append=FALSE)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>write.table(mydata,
+file=”savedata.txt”, quote=FALSE, sep=”\t”, row.names=NA, col.names=TRUE,
+append=FALSE)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>Write.csv(mydata,
+file=”saveCSV.csv”)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>To save df1 df2 as sep
+sheets in excel workbook</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>df1=c…)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>Library(WriteXLS) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>dfs.tosave
+&lt;-(“df2”,”df2”)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>sheets.tosave
+&lt;-c(“df1_result”, “df2_results”)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;background:
+white'><span style='font-size:12.0pt;line-height:107%'>WriteXLS(dfs.tosave,
+ExcelFileName=”testWrok.xls”, SheetNames=sheet.tosave)</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

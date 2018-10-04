@@ -1,0 +1,88 @@
+[jyc@hk ~]$ which R
+/usr/bin/R
+
+
+[jyc@hk ~]$ groups angus
+angus : angus wheel support
+
+[jyc@hk ~]$ sudo usermod -aG r-users angus
+
+
+/etc/rstudio
+[jyc@hk rstudio]$ ls -l
+total 8
+-rw-r--r--. 1 root root 29 Mar  4 15:26 rserver.conf
+-rw-r--r--. 1 root root 32 Mar  4 15:26 rsession.conf
+
+[jyc@hk rstudio]$ cat rserver.conf
+# Server Configuration File
+
+[jyc@hk rstudio]$ cat rsession.conf
+# R Session Configuration File
+
+[jyc@hk rstudio]$ sudo vim rserver.conf
+auth-required-user-group=r_users
+
+
+[jyc@hk rstudio]$ sudo rstudio-server verify-installation
+
+
+[jyc@hk rstudio]$ sudo rstudio-server restart
+
+========================
+<html>
+<head><title>histogram.html </title>
+<style>
+  .goth{font-size:36.0pt;font-family:"Comic Sans MS";color:green;}
+  .poth {font-size:16.0pt;font-family:"Pointy Teeth"; color:blue;}
+  body {font-size:13.0pt;font-family:Arial; color:blank;}
+  .comic {font-size:14.0pt;font-family:"Comic Sans MS"; color:e633ff;}
+  .comicg {font-size:14.0pt;font-family:"Comic Sans MS"; color:green;}
+  .comicb {font-size:14.0pt;font-family:"Comic Sans MS"; color:blue;}
+ </style>
+</head>
+
+<body bgcolor="ccffff">
+
+<p>To create a new group you use the groupadd command:
+
+<p>$ <span class="comic"> sudo groupadd rstudio-users </span>
+
+<p>To add a user to an existing group you use the usermod command:
+
+<p>$ <span class="comic">sudo usermod -a -G rstudio-users jyc </span>
+
+<p>Note that it is critical that you include the -a flag as that indicates that the group should be added to the user rather than replace the user’s group list in it's entirety.
+
+
+<p>You can specify that only users of certain groups are allowed to access RStudio Server. To do this you use the auth-required-user-group setting. For example:
+
+<p><span class="poth"> /etc/rstudio/rserver.conf</span>
+
+<p><span class="poth">auth-required-user-group=rstudio-users</span>
+
+<p>You can specify a single group as the above example does or a comma-delimited list of groups. For example:
+<p><span class="poth">/etc/rstudio/rserver.conf</span>
+
+<p><span class="poth">auth-required-user-group=analysts,admins,rstudio-users
+
+<p>Additional Settings
+
+<p>There is a separate /etc/rstudio/rsession.conf configuration file that enables you to control various aspects of R sessions (note that as with rserver.conf this file does not exist by default). These settings are especially useful if you have a large number of potential users and want to make sure that resources are balanced appropriately.
+Session Timeouts
+
+<p>By default if a user hasn't issued a command for 2 hours RStudio will suspend that user's R session to disk so they are no longer consuming server resources (the next time the user attempts to access the server their session will be restored). You can change the timeout (including disabling it by specifying a value of 0) using the session-timeout-minutes setting. For example:
+
+<p><span class="poth">session-timeout-minutes=30</apsn>
+
+<p>Note that a user's session will never be suspended while it is running code (only sessions which are idle will be suspended).
+
+<p>As of RStudio version 1.0 session timeout settings can be customized for individual users or groups. You can add session-timeout-minutes to the /etc/rstudio/profiles file:
+<p>$ <span class="comicb"> [user]
+<p><span class="poth">session-timeout-minutes=30
+ 
+<p>$ <span class="comicb"> [@powerusers]
+<p><span class="poth">session-timeout-minutes=0 
+
+</body>
+</html>

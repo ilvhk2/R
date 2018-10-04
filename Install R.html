@@ -1,0 +1,1744 @@
+<html>
+<head>
+<title>Install R</title>
+</head>
+<body bgcolor="ccffff">
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:12.0pt;font-family:"Courier New"'>[<span
+class=SpellE>jyc@hk</span> ~]$ </span></sub><span class=SpellE><span
+class=GramE><sub><span style='font-size:14.0pt;font-family:"Courier New";
+color:#FF33CC'>sudo</span></sub></span></span><sub><span style='font-size:14.0pt;
+font-family:"Courier New";color:#FF33CC'> yum install <span class=SpellE>epel</span>-release<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height: normal'>
+<sub><span style='font-size:12.0pt;font-family:"Courier New"'>[<san class=SpellE>jyc@hk</span> ~]$ </span></sub><span class=GramE><sub><span style='font-size:14.0pt;font-family:"Courier New";color:#FF33CC'>yum</span></sub></span><sub><span
+style='font-size:14.0pt;font-family:"Courier New";color:#FF33CC'> info R</span></sub><sub><span style='font-size:12.0pt;font-family:"Courier New"'><o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height: normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>Loaded plugins: <span class=SpellE>fastestmirror</span><o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span class=SpellE><span class=GramE><sub><span style='font-size:10.0pt;
+font-family:"Courier New"'>epel</span></sub></span></span><span class=GramE><sub><span
+style='font-size:10.0pt;font-family:"Courier New"'>/x86_64/<span class=SpellE>metalink</span></span></sub></span><sub><span
+style='font-size:10.0pt;font-family:"Courier New"'><span
+style='mso-spacerun:yes'>                </span><span
+style='mso-spacerun:yes'>     </span><span
+style='mso-spacerun:yes'>  </span>|<span style='mso-spacerun:yes'>  </span>13
+kB<span style='mso-spacerun:yes'>  </span>00:00:00<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span class=SpellE><span class=GramE><sub><span style='font-size:10.0pt;
+font-family:"Courier New"'>epel</span></sub></span></span><sub><span
+style='font-size:10.0pt;font-family:"Courier New"'><span
+style='mso-spacerun:yes'>                                       </span>| 4.3
+kB<span style='mso-spacerun:yes'>  </span>00:00:00<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>(1/3): <span
+class=SpellE>epel</span>/x86_64/<span class=SpellE>group_gz</span><span
+style='mso-spacerun:yes'>         </span><span
+style='mso-spacerun:yes'>     </span><span style='mso-spacerun:yes'>  </span>|
+170 <span class=GramE>kB<span style='mso-spacerun:yes'>  </span>00:00:00</span><o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>(2/3): <span
+class=SpellE>epel</span>/x86_64/<span class=SpellE>updateinfo</span><span
+style='mso-spacerun:yes'>              </span>| 749 <span class=GramE>kB<span
+style='mso-spacerun:yes'>  </span>00:00:00</span><o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>(3/3): <span
+class=SpellE>epel</span>/x86_64/<span class=SpellE>primary_db</span><span
+style='mso-spacerun:yes'>              </span>| 4.5 <span class=GramE>MB<span
+style='mso-spacerun:yes'>  </span>00:00:01</span><o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>Loading
+mirror speeds from cached <span class=SpellE>hostfile</span><o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'><span style='mso-spacerun:yes'> </span>* <span class=GramE>base</span>:
+mirror.math.princeton.edu<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'><span style='mso-spacerun:yes'> </span>* <span class=SpellE><span class=GramE>epel</span></span>:
+mirrors.kernel.org<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'><span style='mso-spacerun:yes'> </span>* <span class=GramE>extras</span>:
+mirrors.kernel.org<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'><span style='mso-spacerun:yes'> </span>* <span class=GramE>updates</span>:
+repo1.dal.innoscale.net<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>Available Packages<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>Name<span style='mso-spacerun:yes'>        </span>: R<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>Arch<span
+style='mso-spacerun:yes'>        </span>: x86_64<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>Version<span
+style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>  </span>:
+3.3.2<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>Release<span
+style='mso-spacerun:yes'>     </span>: 3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>Size<span
+style='mso-spacerun:yes'>        </span>: 27 k<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>Repo<span
+style='mso-spacerun:yes'>        </span>: <span class=SpellE>epel</span>/x86_64<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>Summary<span
+style='mso-spacerun:yes'>     </span>: A language for data analysis and
+graphics<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>URL<span
+style='mso-spacerun:yes'>         </span>: http://www.r-project.org<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>License<span
+style='mso-spacerun:yes'>     </span>: GPLv2+<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span class=GramE><sub><span style='font-size:10.0pt;font-family:"Courier New"'>Description
+:</span></sub></span><sub><span style='font-size:10.0pt;font-family:"Courier New"'>
+This is a <span class=SpellE>metapackage</span> that provides both core R <span
+class=SpellE>userspace</span> and<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>:<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New"'>:<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:red'><o:p>&nbsp;</o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:12.0pt;font-family:"Courier New"'>[<span
+class=SpellE>jyc@hk</span> ~]$</span></sub><sub><span style='font-size:10.0pt;
+font-family:"Courier New";color:red'> </span></sub><span class=SpellE><span
+class=GramE><sub><span style='font-size:14.0pt;font-family:"Courier New";
+color:#FF33CC'>sudo</span></sub></span></span><sub><span style='font-size:14.0pt;
+font-family:"Courier New";color:#FF33CC'> yum install R</span></sub><sub><span
+style='font-size:10.0pt;font-family:"Courier New";color:red'><o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'>:<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'>:<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'>:<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'>Total download size: 288 M<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'>Is this ok [y/d/N]: <span class=GramE>y</span><o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'>Downloading packages:<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'>Delta RPMs disabled because /<span class=SpellE>usr</span>/bin/<span
+class=SpellE>applydeltarpm</span> not installed.<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span class=GramE><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'>warning</span></sub></span><sub><span style='font-size:10.0pt;
+font-family:"Courier New";color:#7030A0'>: /<span class=SpellE>var</span>/cache/yum/x86_64/7/<span
+class=SpellE>epel</span>/packages/R-3.3.2-3.el7.x86_64.rpm: Header V3
+RSA/SHA256 Signature, key ID 352c64e5: NOKEY<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'>Public key for R-3.3.2-3.el7.x86_64.rpm is not installed<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'>(1/304): R-3.3.2-3.el7.x86_64.rpm<span
+style='mso-spacerun:yes'>                </span><o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'>Installed:<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>R.x86_64 0:3.3.2-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><o:p>&nbsp;</o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0;background:yellow;mso-highlight:yellow'>Dependency Installed:</span></sub><sub><span
+style='font-size:10.0pt;font-family:"Courier New";color:#7030A0'><o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>R-core.x86_64
+0:3.3.2-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>R-core-devel.x86_64
+0:3.3.2-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>R-devel.x86_64
+0:3.3.2-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>R-java.x86_64
+0:3.3.2-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>R-java-devel.x86_64
+0:3.3.2-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>avahi-glib.x86_64</span>
+0:0.6.31-17.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>bc.x86_64
+0:1.06.95-13.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>bzip2-devel.x86_64</span>
+0:1.0.6-13.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>copy-<span
+class=SpellE>jdk</span>-<span class=SpellE>configs.noarch</span></span>
+0:1.2-1.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>cpp.x86_64
+0:4.8.5-11.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>cups.x86_64
+1:1.6.3-26.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>cups-client.x86_64</span>
+1:1.6.3-26.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>cups-<span
+class=SpellE>filesystem.noarch</span></span> 1:1.6.3-26.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>cups-filters.x86_64</span>
+0:1.0.35-21.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>cups-filters-libs.x86_64</span>
+0:1.0.35-21.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>desktop-file-utils.x86_64</span>
+0:0.22-1.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>dwz.x86_64 0:0.11-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>emacs-filesystem.noarch</span></span> 1:24.3-19.el7_3<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>gcc.x86_64
+0:4.8.5-11.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>gcc-c</span></span>++.x86_64 0:4.8.5-11.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>gcc-gfortran.x86_64</span>
+0:4.8.5-11.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>ghostscript.x86_64
+0:9.07-20.el7_3.3<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>ghostscript-cups.x86_64</span>
+0:9.07-20.el7_3.3<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>ghostscript-fonts.noarch</span></span> 0:5.50-32.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>giflib.x86_64
+0:4.1.6-9.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>glibc-devel.x86_64</span>
+0:2.17-157.el7_3.1<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>glibc-headers.x86_64</span>
+0:2.17-157.el7_3.1<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>java-1.8.0-openjdk.x86_64</span>
+1:1.8.0.121-0.b13.el7_3<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>java-1.8.0-openjdk-devel.x86_64</span>
+1:1.8.0.121-0.b13.el7_3<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>java-1.8.0-openjdk-headless.x86_64</span>
+1:1.8.0.121-0.b13.el7_3<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>javapackages-tools.noarch</span></span> 0:3.4.1-11.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>libRmath.x86_64
+0:3.3.2-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>libRmath-devel.x86_64</span>
+0:3.3.2-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>libXaw.x86_64 0:1.0.12-5.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>libXfont.x86_64
+0:1.5.1-2.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>libXmu.x86_64
+0:1.1.2-2.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>libXpm.x86_64
+0:3.5.11-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>liberation-fonts-<span
+class=SpellE>common.noarch</span></span> 1:1.07.2-15.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>liberation-mono-<span
+class=SpellE>fonts.noarch</span></span> 1:1.07.2-15.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>libfontenc.x86_64
+0:1.1.2-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>libgfortran.x86_64 0:4.8.5-11.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>libmpc.x86_64
+0:1.0.1-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>libquadmath.x86_64
+0:4.8.5-11.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>libquadmath-devel.x86_64</span>
+0:4.8.5-11.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>libstdc</span></span>++-devel.x86_64 0:4.8.5-11.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>libxslt.x86_64
+0:1.1.28-5.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>lksctp-tools.x86_64</span>
+0:1.0.17-2.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>mpfr.x86_64
+0:3.1.1-4.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'> </span><span
+style='mso-spacerun:yes'> </span><span class=GramE>openblas-Rblas.x86_64</span>
+0:0.2.19-4.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>openjpeg-libs.x86_64</span>
+0:1.5.1-10.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>pcre-devel.x86_64</span>
+0:8.32-15.el7_2.1<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>perl-srpm-macros.noarch</span></span> 0:1-8.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>poppler.x86_64
+0:0.26.5-16.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>poppler-data.noarch</span></span> 0:0.4.6-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>poppler-utils.x86_64</span>
+0:0.26.5-16.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>python-<span
+class=SpellE>javapackages.noarch</span></span> 0:3.4.1-11.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>python-lxml.x86_64</span>
+0:3.2.1-4.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>qpdf-libs.x86_64</span>
+0:5.0.1-3.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>redhat</span></span><span class=GramE>-rpm-<span class=SpellE>config.noarch</span></span>
+0:9.1.0-72.el7.centos<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texinfo-tex.x86_64</span>
+0:5.1-4.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-ae.noarch</span></span> 2:svn15878.1.4-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-algorithms.noarch</span></span> 2:svn15878.0.1-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-amscls.noarch</span></span> 2:svn29207.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-amsfonts.noarch</span></span> 2:svn29208.3.04-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-amsmath.noarch</span></span> 2:svn29327.2.14-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-anysize.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'> </span><span
+style='mso-spacerun:yes'> </span><span class=SpellE><span class=GramE>texlive-attachfile.noarch</span></span>
+2:svn21866.v1.5b-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-avantgar.noarch</span></span> 2:svn28614.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-babel.noarch</span></span> 2:svn24756.3.8m-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-babelbib.noarch</span></span> 2:svn25245.1.31-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-base.noarch</span></span> 2:2012-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-beamer.noarch</span></span> 2:svn29349.3.26-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-bera.noarch</span></span> 2:svn20031.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-beton.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-bibtex.noarch</span></span> 2:svn26689.0.99d-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-bibtex-bin.x86_64</span>
+2:svn26509.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-bookman.noarch</span></span> 2:svn28614.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-booktabs.noarch</span></span> 2:svn15878.1.61803-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-breakurl.noarch</span></span> 2:svn15878.1.30-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-caption.noarch</span></span>
+2:svn29026.3.3__2013_02_03_-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-carlisle.noarch</span></span> 2:svn18258.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-charter.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-chngcntr.noarch</span></span> 2:svn17157.1.0a-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-cite.noarch</span></span> 2:svn19955.5.3-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-cm.noarch</span></span> 2:svn29581.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive</span></span><span class=GramE>-cm-<span class=SpellE>super.noarch</span></span>
+2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-cmap.noarch</span></span> 2:svn26568.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-cmextra.noarch</span></span> 2:svn14075.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive</span></span><span class=GramE>-collection-<span
+class=SpellE>basic.noarch</span></span> 2:svn26314.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive</span></span><span class=GramE>-collection-documentation-<span
+class=SpellE>base.noarch</span></span> 2:svn17091.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive</span></span><span class=GramE>-collection-<span
+class=SpellE>fontsrecommended.noarch</span></span> 2:svn28082.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive</span></span><span class=GramE>-collection-<span
+class=SpellE>latex.noarch</span></span> 2:svn25030.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive</span></span><span class=GramE>-collection-<span
+class=SpellE>latexrecommended.noarch</span></span>
+2:svn25795.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-colortbl.noarch</span></span> 2:svn25394.v1.0a-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-courier.noarch</span></span> 2:svn28614.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-crop.noarch</span></span> 2:svn15878.1.5-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-csquotes.noarch</span></span> 2:svn24393.5.1d-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-ctable.noarch</span></span> 2:svn26694.1.23-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-currfile.noarch</span></span> 2:svn29012.0.7b-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-dvipdfm.noarch</span></span> 2:svn26689.0.13.2d-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-dvipdfm-bin.noarch</span></span>
+2:svn13663.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-dvipdfmx.noarch</span></span> 2:svn26765.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-dvipdfmx-bin.x86_64</span>
+2:svn26509.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-dvipdfmx-def.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-dvips.noarch</span></span> 2:svn29585.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-dvips-bin.x86_64</span>
+2:svn26509.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-ec.noarch</span></span> 2:svn25033.1.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-enctex.noarch</span></span> 2:svn28602.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-enumitem.noarch</span></span> 2:svn24146.3.5.2-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-epsf.noarch</span></span> 2:svn21461.2.7.4-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-eso-pic.noarch</span></span> 2:svn21515.2.0c-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-etex.noarch</span></span> 2:svn22198.2.1-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-etex-pkg.noarch</span></span> 2:svn15878.2.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-etoolbox.noarch</span></span> 2:svn20922.2.1-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-euler.noarch</span></span> 2:svn17261.2.5-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-euro.noarch</span></span> 2:svn22191.1.1-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-eurosym.noarch</span></span> 2:svn17265.1.4_subrfix-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-extsizes.noarch</span></span> 2:svn17263.1.4a-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-fancybox.noarch</span></span> 2:svn18304.1.4-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-fancyhdr.noarch</span></span> 2:svn15878.3.1-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-fancyref.noarch</span></span> 2:svn15878.0.9c-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-fancyvrb.noarch</span></span> 2:svn18492.2.8-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-filecontents.noarch</span></span> 2:svn24250.1.3-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-filehook.noarch</span></span> 2:svn24280.0.5d-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-fix2col.noarch</span>
+2:svn17133.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-float.noarch</span></span> 2:svn15878.1.3d-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-fontspec.noarch</span></span> 2:svn29412.v2.3a-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-footmisc.noarch</span></span> 2:svn23330.5.5b-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-fp.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-fpl.noarch</span></span> 2:svn15878.1.002-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-geometry.noarch</span></span> 2:svn19716.5.6-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-glyphlist.noarch</span></span> 2:svn28576.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-graphics.noarch</span></span> 2:svn25405.1.0o-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-gsftopk.noarch</span></span> 2:svn26689.1.19.2-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-gsftopk-bin.x86_64</span>
+2:svn26509.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-helvetic.noarch</span></span> 2:svn28614.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-hyperref.noarch</span></span> 2:svn28213.6.83m-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-hyph-utf8.noarch</span>
+2:svn29641.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive</span></span><span class=GramE>-hyphen-<span class=SpellE>base.noarch</span></span>
+2:svn29197.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-ifetex.noarch</span></span> 2:svn24853.1.2-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-ifluatex.noarch</span></span> 2:svn26725.1.3-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-ifxetex.noarch</span></span> 2:svn19685.0.5-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-index.noarch</span></span> 2:svn24099.4.1beta-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-jknapltx.noarch</span></span> 2:svn19440.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-kastrup.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-koma-script.noarch</span></span> 2:svn27255.3.11b-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-kpathsea.noarch</span></span> 2:svn28792.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-kpathsea-bin.x86_64</span>
+2:svn27347.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-kpathsea-lib.x86_64</span>
+2:2012-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-l3experimental.noarch</span>
+2:svn29361.SVN_4467-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-l3kernel.noarch</span>
+2:svn29409.SVN_4469-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-l3packages.noarch</span>
+2:svn29361.SVN_4467-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-latex.noarch</span></span> 2:svn27907.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive</span></span><span class=GramE>-latex-<span class=SpellE>bin.noarch</span></span>
+2:svn26689.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive</span></span><span class=GramE>-latex-bin-<span
+class=SpellE>bin.noarch</span></span> 2:svn14050.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive</span></span><span class=GramE>-latex-<span class=SpellE>fonts.noarch</span></span>
+2:svn28888.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-latexconfig.noarch</span></span> 2:svn28991.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-listings.noarch</span></span> 2:svn15878.1.4-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-lm.noarch</span></span> 2:svn28119.2.004-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive</span></span><span class=GramE>-lm-<span class=SpellE>math.noarch</span></span>
+2:svn29044.1.958-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'> </span><span
+style='mso-spacerun:yes'> </span><span class=SpellE><span class=GramE>texlive-ltxmisc.noarch</span></span>
+2:svn21927.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive</span></span><span class=GramE>-<span class=SpellE>lua</span>-alt-<span
+class=SpellE>getopt.noarch</span></span> 2:svn29349.0.7.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-lualatex-math.noarch</span></span> 2:svn29346.1.2-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-luaotfload.noarch</span></span> 2:svn26718.1.26-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-luaotfload-bin.noarch</span></span>
+2:svn18579.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-luatex.noarch</span></span> 2:svn26689.0.70.1-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-luatex-bin.x86_64</span>
+2:svn26912.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-luatexbase.noarch</span></span> 2:svn22560.0.31-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-makeindex.noarch</span></span> 2:svn26689.2.12-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-makeindex-bin.x86_64</span>
+2:svn26509.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-marginnote.noarch</span></span> 2:svn25880.v1.1i-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-marvosym.noarch</span></span> 2:svn29349.2.2a-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-mathpazo.noarch</span></span> 2:svn15878.1.003-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-mdwtools.noarch</span></span> 2:svn15878.1.05.4-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-memoir.noarch</span></span>
+2:svn21638.3.6j_patch_6.0g-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-metafont.noarch</span></span> 2:svn26689.2.718281-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-metafont-bin.x86_64</span>
+2:svn26912.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-metalogo.noarch</span></span> 2:svn18611.0.12-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-mflogo.noarch</span></span> 2:svn17487.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-mfnfss.noarch</span></span> 2:svn19410.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-mfware.noarch</span></span> 2:svn26689.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-mfware-bin.x86_64</span>
+2:svn26509.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-mh.noarch</span></span> 2:svn29420.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-microtype.noarch</span></span> 2:svn29392.2.5-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-misc.noarch</span></span> 2:svn24955.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-mparhack.noarch</span></span> 2:svn15878.1.4-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-mptopdf.noarch</span></span> 2:svn26689.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-mptopdf-bin.noarch</span></span>
+2:svn18674.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-ms.noarch</span></span> 2:svn24467.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-multido.noarch</span></span> 2:svn18302.1.42-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-natbib.noarch</span></span> 2:svn20668.8.31b-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-ncntrsbk.noarch</span></span> 2:svn28614.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-ntgclass.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-oberdiek.noarch</span></span> 2:svn26725.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-palatino.noarch</span></span> 2:svn28614.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-paralist.noarch</span></span> 2:svn15878.2.3b-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-parallel.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-parskip.noarch</span></span> 2:svn19963.2.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pdfpages.noarch</span></span> 2:svn27574.0.4t-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pdftex.noarch</span></span> 2:svn29585.1.40.11-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-pdftex-bin.x86_64</span>
+2:svn27321.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pdftex-def.noarch</span></span> 2:svn22653.0.06d-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pgf.noarch</span></span> 2:svn22614.2.10-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-plain.noarch</span></span> 2:svn26647.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-powerdot.noarch</span></span> 2:svn25656.1.4i-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-psfrag.noarch</span></span> 2:svn15878.3.04-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pslatex.noarch</span></span> 2:svn16416.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-psnfss.noarch</span></span> 2:svn23394.9.2a-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pspicture.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-pst-3d.noarch</span>
+2:svn17257.1.10-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pst-blur.noarch</span></span> 2:svn15878.2.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pst-coil.noarch</span></span> 2:svn24020.1.06-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pst-eps.noarch</span></span> 2:svn15878.1.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pst-fill.noarch</span></span> 2:svn15878.1.01-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pst-grad.noarch</span></span> 2:svn15878.1.06-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pst-math.noarch</span></span> 2:svn20176.0.61-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pst-node.noarch</span></span> 2:svn27799.1.25-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pst-plot.noarch</span></span> 2:svn28729.1.44-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pst-slpe.noarch</span></span> 2:svn24391.1.31-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pst-text.noarch</span></span> 2:svn15878.1.00-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pst-tree.noarch</span></span> 2:svn24142.1.12-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pstricks.noarch</span></span> 2:svn29678.2.39-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pstricks-add.noarch</span></span> 2:svn28750.3.59-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-pxfonts.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-qstest.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-rcs.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-rotating.noarch</span></span> 2:svn16832.2.16b-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-rsfs.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-sansmath.noarch</span></span> 2:svn17997.1.1-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-sauerj.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-section.noarch</span></span> 2:svn20180.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-seminar.noarch</span></span> 2:svn18322.1.5-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-sepnum.noarch</span></span> 2:svn20186.2.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-setspace.noarch</span></span> 2:svn24881.6.7a-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-showexpl.noarch</span></span> 2:svn27790.v0.3j-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-soul.noarch</span></span> 2:svn15878.2.4-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-subfig.noarch</span></span> 2:svn15878.1.3-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-symbol.noarch</span></span> 2:svn28614.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-tetex.noarch</span></span> 2:svn29585.3.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-tetex-bin.noarch</span></span>
+2:svn27344.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-tex.noarch</span></span> 2:svn26689.3.1415926-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-tex-bin.x86_64</span>
+2:svn26912.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-tex-gyre.noarch</span></span> 2:svn18651.2.004-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive</span></span><span class=GramE>-<span class=SpellE>tex</span>-gyre-<span
+class=SpellE>math.noarch</span></span> 2:svn29045.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-texconfig.noarch</span></span> 2:svn29349.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-texconfig-bin.noarch</span></span>
+2:svn27344.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-texlive.infra.noarch</span></span> 2:svn28217.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-texlive.infra-bin.x86_64</span>
+2:svn22566.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-textcase.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-thumbpdf.noarch</span></span> 2:svn26689.3.15-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-thumbpdf-bin.noarch</span></span>
+2:svn6898.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-times.noarch</span></span> 2:svn28614.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-tipa.noarch</span></span> 2:svn29349.1.3-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-tools.noarch</span></span> 2:svn26263.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-txfonts.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-type1cm.noarch</span>
+2:svn21820.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-typehtml.noarch</span></span> 2:svn17134.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-ucs.noarch</span></span> 2:svn27549.2.1-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-underscore.noarch</span></span> 2:svn18261.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-unicode-math.noarch</span></span> 2:svn29413.0.7d-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-url.noarch</span></span> 2:svn16864.3.2-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-utopia.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-varwidth.noarch</span></span> 2:svn24104.0.92-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-wasy.noarch</span></span> 2:svn15878.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-wasysym.noarch</span></span> 2:svn15878.2.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-xcolor.noarch</span></span> 2:svn15878.2.11-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-xdvi.noarch</span></span> 2:svn26689.22.85-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>texlive-xdvi-bin.x86_64</span>
+2:svn26509.0-38.20130427_r30134.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-xkeyval.noarch</span></span> 2:svn27995.2.6a-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-xunicode.noarch</span></span> 2:svn23897.0.981-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-zapfchan.noarch</span></span> 2:svn28614.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>texlive-zapfding.noarch</span></span> 2:svn28614.0-38.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>tre.x86_64
+0:0.8.0-18.20140228gitc2f5d13.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>tre-common.noarch</span></span> 0:0.8.0-18.20140228gitc2f5d13.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>tre-devel.x86_64</span>
+0:0.8.0-18.20140228gitc2f5d13.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>ttmkfdir.x86_64
+0:3.0.9-42.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>tzdata-java.noarch</span></span> 0:2016j-1.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>unzip.x86_64
+0:6.0-16.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>urw-fonts.noarch</span></span> 0:2.4-16.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+class=GramE>xdg-utils.noarch</span></span> 0:1.1.0-0.17.20120809git.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>xorg-x11</span>-font-utils.x86_64
+1:7.5-20.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>xorg-x11</span>-fonts-Type1.noarch
+0:7.5-9.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>xz-devel.x86_64</span>
+0:5.2.2-1.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>zip.x86_64 0:3.0-11.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>zziplib.x86_64
+0:0.13.62-5.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><o:p>&nbsp;</o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'>Dependency Updated:<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>avahi-autoipd.x86_64</span>
+0:0.6.31-17.el7<span style='mso-spacerun:yes'>      </span>avahi-libs.x86_64
+0:0.6.31-17.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>chkconfig.x86_64
+0:1.7.2-1.el7<span style='mso-spacerun:yes'>            </span>glibc.x86_64
+0:2.17-157.el7_3.1<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>glibc-common.x86_64</span>
+0:2.17-157.el7_3.1<span style='mso-spacerun:yes'>    </span>libgcc.x86_64
+0:4.8.5-11.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>libgomp.x86_64
+0:4.8.5-11.el7<span style='mso-spacerun:yes'>             </span><span
+class=SpellE>libstdc</span>++.x86_64 0:4.8.5-11.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>nspr.x86_64
+0:4.11.0-1.el7_2<span style='mso-spacerun:yes'>              </span>nss.x86_64
+0:3.21.3-2.el7_3<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>nss-softokn.x86_64</span>
+0:3.16.2.3-14.4.el7<span style='mso-spacerun:yes'>   
+</span>nss-softokn-freebl.x86_64 0:3.16.2.3-14.4.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>nss-sysinit.x86_64</span>
+0:3.21.3-2.el7_3<span style='mso-spacerun:yes'>       </span>nss-tools.x86_64
+0:3.21.3-2.el7_3<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>nss-util.x86_64</span>
+0:3.21.3-1.1.el7_3<span style='mso-spacerun:yes'>        </span>pcre.x86_64
+0:8.32-15.el7_2.1<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>xz.x86_64
+0:5.2.2-1.el7<span style='mso-spacerun:yes'>                  
+</span>xz-libs.x86_64 0:5.2.2-1.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'>.x86_64 0:3.16.2.3-14.4.el7<span style='mso-spacerun:yes'>  
+</span><span style='mso-spacerun:yes'> </span>nss-softokn-freebl.x86_64
+0:3.16.2.3-14.4.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>nss-sysinit.x86_64</span>
+0:3.21.3-2.el7_3<span style='mso-spacerun:yes'>       </span>nss-tools.x86_64
+0:3.21.3-2.el7_3<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span><span class=GramE>nss-util.x86_64</span>
+0:3.21.3-1.1.el7_3<span style='mso-spacerun:yes'>        </span>pcre.x86_64
+0:8.32-15.el7_2.1<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><sub><span style='font-size:10.0pt;font-family:"Courier New";
+color:#7030A0'><span style='mso-spacerun:yes'>  </span>xz.x86_64
+0:5.2.2-1.el7<span style='mso-spacerun:yes'>                  
+</span>xz-libs.x86_64 0:5.2.2-1.el7<o:p></o:p></span></sub></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

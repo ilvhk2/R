@@ -1,0 +1,47 @@
+<html>
+<head><title>plot.html </title>
+<style>
+  .goth {font-size:14.0pt;font-family:"Pointy Teeth"; color:purple;}
+  body {font-size:12.0pt;font-family:Arial; color:blank;}
+  .comicg {font-size:12.0pt;font-family:"Comic Sans MS"; color:green;}
+  .comic {font-size:12.0pt;font-family:"Comic Sans MS"; color:e633ff;}
+ </style>
+</head>
+<body bgcolor="ccffff">
+<span class="goth">The 'iris' data set is an internally housed R data set </span>
+
+<p>&nbsp;<p>
+First load this object by
+<p>> <span class="comic"> data(iris)  </span>
+
+
+<p>To view the object
+<p>> <span class="comic"> View(iris)
+
+<p>To display the first 6 rows of the iris data object
+<p>> <span class="comic">head(iris)</span>
+<pre>
+  Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+1          5.1         3.5          1.4         0.2  setosa
+2          4.9         3.0          1.4         0.2  setosa
+3          4.7         3.2          1.3         0.2  setosa
+4          4.6         3.1          1.5         0.2  setosa
+5          5.0         3.6          1.4         0.2  setosa
+6          5.4         3.9          1.7         0.4  setosa
+</pre>
+
+<p> <span class="comicg">As we can see, column Species contains catalogy data.  To see the catalogies and the count:
+<p>> <span class="comic">table(iris$Species)
+<pre>
+    setosa versicolor  virginica 
+        50         50         50 
+</pre>
+<p>&nbsp;<p>
+<p>get help on how to use plot funciton:
+<p>> <span class="comic">?plot()</span>
+
+<p>To plot the Petal and Sepal Lengths
+<p>> <span class="comic"> plot(iris$Petal.Length,iris$Sepal.Length)</span>
+<p><img src="plot.jpg"></p>
+</body>
+</html>

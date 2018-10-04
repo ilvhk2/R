@@ -1,0 +1,51 @@
+<html> 
+<head><title>MyProject</title>
+</head>
+
+<body bgcolor="#CCFFFF">
+<p><h4>R is an open source Language. It is a programming Language and it became a most power choice for statistical analyst.</h4></p>
+<p>&nbsp;</p>
+<p>You could download the package from <a href="http://www.r-project.org">http://www.r-project.org</a> </p>
+<p>OR</p>
+<p>You could install epel-release and then install R. R is present in EPEL(Extra Packages for Enterprise Linux) repository.</p>
+<p>&nbsp;</p>
+<p>R has a lot of dependencies, I found it is not easy to install from the source code.&nbsp; So for my project I do the simple way</p>
+<p><span style='font-size: 14.0pt;font-family:"Courier New";color:#FF33CC'>sudo yum install epel-release</p>
+<p><span style='font-size:14.0pt;font-family:"Courier New";color:#FF33CC'>sudo yum install R</span>
+<p>&nbsp;</p>
+<p>After R is installed, you could make a directory for storing your work in Linux</p>
+<p><span style='font-size:14.0pt;font-family:"Courier New";color:#FF33CC'>mkdir mywork</p>
+<p style='line-height:105%'><span style='color:black;mso-themecolor:text1'>Use </span><span
+style='font-size:14.0pt;line-height:105%;font-family:"Courier New";color:black;mso-themecolor:text1'>setwd("path")</span>
+<span style='color:black;mso-themecolor:text1'> to set your working directory and </span><span class=SpellE><span
+style='font-size:14.0pt;line-height:105%;font-family:"Courier New";color:black;mso-themecolor:text1'>getwd</span></span><span style='font-size:14.0pt;
+line-height:105%;font-family:"Courier New";color:black;mso-themecolor:text1'>()</span>
+<span style='color:black;mso-themecolor:text1'> to see the working directory. <o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p><h4>Syntax of R is similar like unix|linux</h4></p>
+<p>R is case sensitive</p>
+<p>R default prompt is &gt;<o:p></o:p></span></p>
+<p>R commands are separated either by ";" or newline.</p>
+<p>If command is not complete at the end of a line R will give a different prompt, by default is +<o:p></o:p></span></p>
+<p>Use vertical arrow keys to scroll forward and backward through a command history<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p><b>To get help: use help function or question mark</b></p>
+<p>&gt;<span style='font-size:14.0pt;line-height:105%;font-family:"Courier New";color:#FF3399'>help(plot)</span>
+<p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:105%'>
+<span class=GramE><span style='font-size:14.0pt;line-height:105%;font-family:"Courier New";color:black;mso-themecolor:text1'>&gt;</span>
+<span style='font-size:14.0pt;line-height:105%;font-family:"Courier New";color:#FF3399'>?plot</span></span></p>
+<p style='line-height:105%'><span style='color:#FF3399'>q</span><span style='color:black;mso-themecolor:text1'> 
+<span class=GramE>to</span> quit help<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p><b>Type R to start R :</b></p>
+<p style='line-height:105%'><span style='color:#FF33CC'>&nbsp;</span><span style='color:black;mso-themecolor:text1'>$</span><span style='color:#FF3399'>R</span></p>
+<p style='line-height:105%'><span style='font-size:14.0pt;line-height:105%;font-family:"Courier New";color:black;mso-themecolor:text1'>&gt;</span><span
+class=GramE><span style='color:#FF3399'>q(</span></span><span style='color:#FF3399'>)</span>
+<span style='color:black;mso-themecolor:text1'> to quit R<o:p></o:p></span></p>
+
+<p style='line-height:105%'><span style='color:black;mso-themecolor:text1'>R workspace is stored collection of objects<o:p></o:p></span></p>
+
+<p>Everything in R is an object.<o:p></o:p></span></p>
+
+</body>
+</html>

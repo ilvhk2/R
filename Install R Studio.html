@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>R Studio</title>
+</head>
+
+<body bgcolor="ccffff">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><b>You may want to install IDE(Integrated Development Enviornment) for R, see below steps :</b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><sub><span style='font-size:14.0pt;line-height:115%;font-family:"Courier New";color:#FF33CC'>
+sudo wget https://download2.rstudio.org/rstudio-server-rhel-1.0.44-x86_64.rpm --no-check-certificate</span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><sub><span style='font-size:14.0pt;line-height:115%;font-family:"Courier New";color:#FF33CC'>
+sudo yum install rstudio-server-rhel-1.0.44-x86_64.rpm</span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><sub><span style='font-size:14.0pt;line-height:115%;font-family:"Courier New";color:#FF33CC'>
+sudo firewall-cmd --permanent --add-port=8787/tcp</span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><sub><span style='font-size:14.0pt;line-height:115%;font-family:"Courier New";color:#FF33CC'>
+sudo systemctl status rstudio-server.service</span></sub></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'>Sign in the browser </p>
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><sub><span style='font-size:14.0pt;line-height:115%;font-family:"Courier New";color:#0000FF'>
+hk.ulcert.uw.edu:8787</span></sub></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-indent:.5in'><span style='font-size:10.0pt;line-height:115%;font-family:"Courier New";color:fuchsia'>
+<img  id="Picture 2" src="Install%20R%20Studio_files/image001.jpg"></span></p>
+
+</div>
+
+</body>
+
+</html>
