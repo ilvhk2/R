@@ -1,0 +1,51 @@
+<html>
+<head><title>issue.html </title></head>
+<style>
+  .goth {font-size:14.0pt;font-family:"Pointy Teeth"; color:purple;}
+  body {font-size:12.0pt;font-family:Arial; color:blank;}
+  .comicg {font-size:12.0pt;font-family:"Comic Sans MS"; color:green;}
+  .comic {font-size:12.0pt;font-family:"Comic Sans MS"; color:e633ff;}
+ </style>
+</head>
+
+<body bgcolor="ccffff">
+<span class="goth">while I am learning the R, I found the following issue : </span>
+
+<p>&nbsp;<p>
+<p> when I use setwd() to change workink directory, I got the following error
+<p>cannot change working directory
+<P> so I change the directory in linux before I start R
+
+<p>&nbsp;<p>
+
+<p>converting char to numeric from a vector no problem :
+<p>> <span class="comic"> studentid <-c("101","102","103","104","105","106","107","108","109","110","111")</span>
+ <p>> <span class="comic">studentid
+ <pre>
+ [1] "101" "102" "103" "104" "105" "106" "107" "108" "109" "110" "111"
+ </pre>
+ <p>> <span class="comic"> as.numeric(studentid)
+ <pre>
+ [1] 101 102 103 104 105 106 107 108 109 110 111
+ </pre>
+ 
+<p>converting char to numeric from a matrix no problem :
+<p>> <span class="comic">  age <-c(25,53,20,60,33,45,43,22,65,55,72)
+<p>> <span class="comic">  mydata<-data.frame(studentid,age)
+<p>> <span class="comic">  (mydata$studentid)</span>
+<pre>
+ [1] 101 102 103 104 105 106 107 108 109 110 111
+Levels: 101 102 103 104 105 106 107 108 109 110 111
+</pre>
+<p>> <span class="comic">  plot(as.numeric(mydata$studentid),q1)
+<p><img src="issue_plot.jpg"></p>
+<p> As you can the studentid starts from 1 instead of 101
+<p>&nbsp;<p>
+<P>Plot comes out fine when I put the studendid from a vector, then plot it:
+> x<-mydata$studentid
+> y<-mydata$q1
+> plot(x,y)
+<p><img src="no_issue_plot.jpg"></p>
+
+</body>
+</html>

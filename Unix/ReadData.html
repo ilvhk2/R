@@ -1,0 +1,141 @@
+<html>
+<head><title>ReadData.html </title>
+<style>
+  .goth {font-size:14.0pt;font-family:"Pointy Teeth"; color:purple;}
+  body {font-size:12.0pt;font-family:Arial; color:blank;}
+  .comic {font-size:12.0pt;font-family:"Comic Sans MS"; color:e633ff;}
+ </style>
+</head>
+<body bgcolor="ccffff">
+<span class="goth">You could importing data from various external file </span>
+<p>read csv file:
+<p>[jyc@ulc-178 mywork]$<span class="comic">cat mydata.csv</span>
+<pre>
+response, A, B, C, D, E
+47, 8, 50, 0.2, 0.4, usual
+42, 9, 43, 0.4, 0.4, Modified
+</pre>
+<p>> <span class="comic"> mydata<-read.table("/home/jyc/mywork/mydata.csv",header=TRUE)</span>
+<p>OR read data from current working directory, first check the working directory<p>
+<p> ><span class="comic"> getwd()</span>
+<pre>
+[1] "/home/jyc/mywork"
+</pre>
+<p>> <span class="comic"> mydata<-read.table("mydata.csv",header=TRUE)</span>
+<p>> <span class="comic"> mydata
+<pre>
+  response. A.  B.   C.   D.        E
+1       47, 8, 50, 0.2, 0.4,    usual
+2       42, 9, 43, 0.4, 0.4, Modified
+</pre>
+<p> read a tab delimited file:<p>
+
+<p>[jyc@ulc-178 mywork]$<span class="comic"> cat mydata.tab</span>
+<pre>
+empid   gender  state
+1       m       wa
+2       m       ca
+3       f       wa
+4       f       or
+5       f       ca
+</pre>
+<p> ><span class="comic"> mydata<-read.table("mydata.tab",header=TRUE,sep="\t")
+<p>> <span class="comic"> mydata</span>
+<pre>
+  empid gender state
+1     1      m    wa
+2     2      m    ca
+3     3      f    wa
+4     4      f    or
+5     5      f    ca
+</pre>
+<p>use read.dta function from the foreign package to read data on the web 
+<p> ><span class="comic"> library(foreign)
+<p> ><span class="comic"> webdata<-read.dta("http://www.stata-press.com/data/r10/rootstock.dta")</span>
+<p>get information about your data 
+<p> ><span class="comic"> class(webdata)
+<pre>
+[1] "data.frame"
+</pre>
+<p> ><span class="comic"> str(webdata)
+<pre>
+'data.frame':   48 obs. of  5 variables:
+ $ rootstock: int  1 1 1 1 1 1 1 1 2 2 ...
+ $ y1       : num  1.11 1.19 1.09 1.25 1.11 ...
+ $ y2       : num  2.57 2.93 2.87 3.84 3.03 ...
+ $ y3       : num  3.58 3.75 3.93 3.94 3.6 ...
+ $ y4       : num  0.76 0.821 0.928 1.009 0.766 ...
+ - attr(*, "datalabel")= chr "Table 6.2 Rootstock Data -- Rencher (2002)"
+ - attr(*, "time.stamp")= chr "20 Apr 2007 20:03"
+ - attr(*, "formats")= chr  "%9.0g" "%4.2f" "%5.3f" "%4.2f" ...
+ - attr(*, "types")= int  251 254 254 254 254
+ - attr(*, "val.labels")= chr  "" "" "" "" ...
+ - attr(*, "var.labels")= chr  "" "trunk girth at 4 years (mm x 100)" "extension growth at 4 years (m)" "trunk girth at 15 years (mm x 100)" ...
+ - attr(*, "expansion.fields")=List of 5
+  ..$ : chr  "_dta" "note4" "Andrews D.F., & Herzberg, A.M. (1985), Data, New York: Springer-Verlag."
+  ..$ : chr  "_dta" "note0" "4"
+  ..$ : chr  "_dta" "note3" "New York: Wiley. Data originally from pp.357-360 of"
+  ..$ : chr  "_dta" "note2" "Rencher A.C. (2002), Methods of Multivariate Analysis, 2nd Edition,"
+  ..$ : chr  "_dta" "note1" "Data taken from Example 6.1.7, Table 6.2 Rootstock Data, pp.170-173, of"
+ - attr(*, "version")= int 12
+</pre>
+
+<p> ><span class="comic">head(webdata)
+<pre>
+  rootstock   y1    y2   y3    y4
+1         1 1.11 2.569 3.58 0.760
+2         1 1.19 2.928 3.75 0.821
+3         1 1.09 2.865 3.93 0.928
+4         1 1.25 3.844 3.94 1.009
+5         1 1.11 3.027 3.60 0.766
+6         1 1.08 2.336 3.51 0.726
+</pre>
+<p> ><span class="comic"> tail(webdata)
+<pre>
+   rootstock   y1    y2   y3    y4
+43         6 1.05 2.199 3.75 0.790
+44         6 1.02 2.132 3.99 0.853
+45         6 1.05 1.949 3.34 0.610
+46         6 1.07 2.251 3.21 0.562
+47         6 1.13 3.064 3.63 0.707
+48         6 1.11 2.469 3.95 0.952
+</pre>
+<p>&nbsp;<p>
+below are the instruction how to connect to MySQL, but I have not test it yet -- will do when i have more time
+<p>An R package, RMySql, is available from CRAN
+<p><span class="comic">sudo -i R
+<p><span class="comic">sudo yum install libmysqlclient-dev
+<p><span class="comic">sudo yum install.package("RMySQL")
+<pre>
+1-invoke the library:
+library(RMySQL)
+
+2-setup the DB driver with 
+d<-dbDriver("MySQL")
+
+3-specify the DB connector
+con<-dbConnect(d,dbname='test')
+
+4-fetch data
+mysqldata <-dbGetQuerry(con,'select * from <tablename>')
+</pre>
+
+<p>Read csv Data:
+<p> <span class="goth"> mycsv<-read.csv(“test.csv”)
+<P>Read csv date with header:
+<p> <span class="goth"> mycsv <-read.csv(“test.csv “,  row.names=1, stringAsFactors=FALSE,header=TRUE)
+<p>View the header information:
+<p> <span class="goth">head(mycsv)
+<p>want to know the structure of the mycsv data:
+<p> <span class="goth">str(mycsv)
+<p>
+<p>&nbsp;</p>
+<p>For more information, use help :
+<p>For example, to get information how to read csv data
+<p>? <span class="comic">read.csv 
+<p>want to know how to read data from table
+<p>? <span class="comic">read.table
+<p>want to know how to read delimator data 
+<p>? <span class="comic">read.delim
+</body>
+</html>

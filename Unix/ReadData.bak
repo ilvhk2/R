@@ -1,0 +1,69 @@
+<html>
+<head><title>ReadData.html </title>
+<style>
+  .goth {font-size:12.0pt;font-family:"Pointy Teeth"; color:purple;}
+  body {font-size:13.0pt;font-family:Arial; color:blank;}
+  .comic {font-size:12.0pt;font-family:"Comic Sans MS"; color:e633ff;}
+ </style>
+</head>
+
+<body bgcolor="ccffff">
+<p>Read csv Data:
+<p> <span class="goth"> mycsv<-read.csv(“test.csv”)
+<P>Read csv date with header:
+<p> <span class="goth"> mycsv <-read.csv(“test.csv “,  row.names=1, stringAsFactors=FALSE,header=TRUE)
+<p>View the header information:
+<p> <span class="goth">head(mycsv)
+<p>want to know the structure of the mycsv data:
+<p> <span class="goth">str(mycsv)
+<p>
+<p>&nbsp;</p>
+<p>For more information, use help :
+<p>For example, to get information how to read csv data
+<p>? <span class="comic">read.csv 
+<p>want to know how to read data from table
+<p>? <span class="comic">read.table
+<p> <span class="goth">mytxt <-read.table(“test.txt “, sep=”\t”, header=TRUE)
+<p> <span class="goth">mydata <-read.table(“test.txt “, sep=”\t”, row.names=1, ,header=TRUE,)
+<p>want to know how to read delimator data 
+<p>? <span class="comic">read.delim
+<p> <span class="goth">mydata <-read.delim“test.txt “, sep=”\t”, row.names=1, ,header=TRUE,)
+<p> <span class="goth">mydata <-read.XLS(“test.txt “, row.names=1, sheet=1,now.names=1,stringAsFactors=FALSE,header=TRUE)
+<p>myBook <-loadWorkbook(“ex.xlsx”)
+<p>
+<p>mydata <-readWorksheet(myBook,sheet=1,rownames=1)
+<p>
+<p>to load SPSS files into R as data frames:
+<p>library(“foreign”)
+<p>mydata <- read.spss(“mySpss.spss”, to.data.frame=TRUE)
+<p>
+<p>
+<p>to load json files
+<p>library(“rjson”)
+<p>mydata_list<-fromJSON(FILE=”myfile.json”)
+<p>mydata <-as.data.frame(mydata_list)
+<p> 
+<p>
+<p>save(x,y, file=”exampleData.Rdata”)
+<p>load(“exampleData.Rdata”)
+<p> 
+<p>
+<p>saveRDS – load 1 obj at a timesaveRDS(x,”x.rds”)
+<p>saveRDS(y,”y.rds”)
+<p>x2 <-readRDS(“x.rds”)
+<p> 
+<p>
+<p>write.table(mydata, file=”savedata.txt”, quote=FALSE, sep=”\t”, row.names=TRUE, col.names=TRUE, append=FALSE)
+<p>write.table(mydata, file=”savedata.txt”, quote=FALSE, sep=”\t”, row.names=NA, col.names=TRUE, append=FALSE)
+<p>Write.csv(mydata, file=”saveCSV.csv”) 
+<p>
+<p>
+<p>To save df1 df2 as sep sheets in excel workbook
+<p>df1=c…)
+<p>Library(WriteXLS) 
+<p>dfs.tosave <-(“df2”,”df2”)
+<p>sheets.tosave <-c(“df1_result”, “df2_results”)
+<p>WriteXLS(dfs.tosave, ExcelFileName=”testWrok.xls”, SheetNames=sheet.tosave)
+
+</body>
+</html>

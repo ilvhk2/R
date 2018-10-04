@@ -1,0 +1,66 @@
+
+<style> body {font-size:16.0pt;font-family:Arial;} </style>
+
+
+<html>
+<head><title>plot.html </title>
+<style>
+  .goth{font-size:36.0pt;font-family:"Comic Sans MS";color:green;}
+  .poth {font-size:16.0pt;font-family:"Pointy Teeth"; color:purple;}
+  body {font-size:13.0pt;font-family:Arial; color:blank;}
+  .comic {font-size:14.0pt;font-family:"Comic Sans MS"; color:e633ff;}
+ </style>
+</head>
+
+<body bgcolor="ccffff">
+<p><span class="poth">
+Get Summary statistics
+<p>
+
+<p><span class="poth"> R has a lot of datasets, to use one of the dataset called faithful.  
+<p><span class="poth"> Use attach function to load it to memory
+
+><p><span class="comic"> attach(faithful)</P>
+<P>get summary of statistic
+
+> <p><span class="comic">summary(eruptions)
+<pre>
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  1.600   2.163   4.000   3.488   4.454   5.100
+</pre>
+
+use fivenum function to get minimum, 1st quartile, median,mean, 3rd quartile, maximum
+
+><p><span class="comic"> fivenum(eruptions)
+<pre>
+[1] 1.6000 2.1585 4.0000 4.4585 5.1000
+<pre>
+
+display stem and leaf:
+
+><p><span class="comic"> stem(eruptions)
+<pre>
+  The decimal point is 1 digit(s) to the left of the |
+
+  16 | 070355555588
+  18 | 000022233333335577777777888822335777888
+  20 | 00002223378800035778
+  22 | 0002335578023578
+  24 | 00228
+  26 | 23
+  28 | 080
+  30 | 7
+  32 | 2337
+  34 | 250077
+  36 | 0000823577
+  38 | 2333335582225577
+  40 | 0000003357788888002233555577778
+  42 | 03335555778800233333555577778
+  44 | 02222335557780000000023333357778888
+  46 | 0000233357700000023578
+  48 | 00000022335800333
+  50 | 0370
+</pre>
+
+</body>
+</html>

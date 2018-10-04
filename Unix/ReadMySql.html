@@ -1,0 +1,33 @@
+<html>
+<head><title>outline.html </title>
+<style>
+  .goth {font-size:16.0pt;font-family:"Pointy Teeth"; color:purple;}
+  body {font-size:13.0pt;font-family:Arial; color:blank;}
+  .comic {font-size:14.0pt;font-family:"Comic Sans MS"; color:e633ff;}
+ </style>
+</head>
+<body bgcolor="ccffff">
+
+below are the instruction how to connect to MySQL, but I have not test it yet -- will do when i have more time
+<pre>
+An R package, RMySql, is available from CRAN
+sudo -i R
+sudo yum install libmysqlclient-dev
+sudo yum install.package("RMySQL")
+
+1-invoke the library:
+library(RMySQL)
+
+2-setup the DB driver with 
+d<-dbDriver("MySQL")
+
+3-specify the DB connector
+con<-dbConnect(d,dbname='test')
+
+4-fetch data
+mysqldata <-dbGetQuerry(con,'select * from <tablename>')
+</pre>
+
+
+</body>
+</html>
